@@ -30,7 +30,7 @@ void adauga_date_student_nou(struct student *data, int n)
 
   FILE *fisierxml = fopen( "catalog.xml", "a+" );
   //int grupa;
-  char initiala[2], finantare[6];
+  char initiala[2];
   printf("Introduceti numarul de studenti pe care doriti sa ii adaugati: ");
   scanf("%d", &nr);
   data = (struct student *)realloc(data, (n+nr)* sizeof(struct student));
@@ -46,25 +46,25 @@ void adauga_date_student_nou(struct student *data, int n)
 
                     printf("Adaugati numele studentului:\n");
                     fprintf(fisierxml,"   <NUME>");
-                    scanf("%s", &data[i].nume);
+                    scanf("%s", data[i].nume);
                     fprintf(fisierxml,"%s", data[i].nume);
                     fprintf(fisierxml,"</NUME>\n");
 
                     printf("Adaugati initiala tatalui studentului:");
                     fprintf(fisierxml,"   <INITIALA>");
-                    scanf("%s", &initiala);
+                    scanf("%s", initiala);
                     fprintf(fisierxml, "%s", initiala);
                     fprintf(fisierxml,"</INITIALA>\n");
 
                     printf("Adaugati prenumele studentului:\n");
                     fprintf(fisierxml,"   <PRENUME>");
-                    scanf("%s", &data[i].prenume);
+                    scanf("%s", data[i].prenume);
                     fprintf(fisierxml,"%s", data[i].prenume);
                     fprintf(fisierxml,"</PRENUME>\n");
 
                     printf("Adaugati modul de finantare:");
                     fprintf(fisierxml,"   <FINANTARE>");
-                    scanf("%s",&data[i].finantare);
+                    scanf("%s",data[i].finantare);
                     fprintf(fisierxml, "%s" ,data[i].finantare);
                     fprintf(fisierxml,"</FINANTARE>\n");
 
@@ -80,7 +80,8 @@ void adauga_date_student_nou(struct student *data, int n)
 void Control_Panel( struct student *data, int n )
 {
     FILE *fisierxml =  fopen( "catalog.xml", "a+" );
-    int exit,parametru;
+    int exit;
+    char parametru;
     exit = 0;
     while( !exit )
     {
