@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <STUDENT>
+    <GRUPA>151</GRUPA>
+    <NUME>Radu</NUME>
+    <INITIALA>A</INITIALA>
+    <PRENUME>Florinela</PRENUME>
+    <FINANTARE>Buget</FINANTARE>
+  </STUDENT>
+   <STUDENT>
+    <GRUPA>151</GRUPA>
+    <NUME>Iliescu</NUME>
+    <INITIALA>D</INITIALA>
+    <PRENUME>Roxana</PRENUME>
+    <FINANTARE>Taxa</FINANTARE>
+  </STUDENT>
+  <STUDENT>
+    <GRUPA>152</GRUPA>
+    <NUME>Dragoiu</NUME>
+    <INITIALA>B</INITIALA>
+    <PRENUME>Laurentiu</PRENUME>
+    <FINANTARE>Taxa</FINANTARE>
+  </STUDENT>
+  <STUDENT>
+    <GRUPA>153</GRUPA>
+    <NUME>Popescu</NUME>
+    <INITIALA>P</INITIALA>
+    <PRENUME>Gustave</PRENUME>
+    <FINANTARE>Buget</FINANTARE>
+  </STUDENT>
+</CATALOG>
